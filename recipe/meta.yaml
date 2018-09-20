@@ -1,7 +1,7 @@
 {% set name = "dash-html-components" %}
 {% set filename = "dash_html_components" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "546cbdd2943b8016b368fce6e5242cabe59aea21d847396dab78310e0622c0d0" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "febdfaca7d73510bf4b28f0ba3fa57ce057129086574335175bb7be303f05966" %}
 
 package:
   name: {{ name|lower }}
