@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python
-    - dash  # not listed in the setup.py
+    - dash>=0.32.2
 
 test:
   imports:
