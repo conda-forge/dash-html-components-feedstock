@@ -1,7 +1,7 @@
 {% set name = "dash-html-components" %}
 {% set filename = "dash_html_components" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "8992097a044f5add21f86ccbe0caef8c499394a04d5f2b6cc4458a42f37cca98" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "dafb54ae8ab601fffe50c74d72b32783dec2beea65fd1c7e7dd6a66e20e545ba" %}
 
 package:
   name: {{ name|lower }}
@@ -37,8 +37,8 @@ about:
   license_family: MIT
   # TODO : Update this once plotly packages it correctly:
   # https://github.com/plotly/dash-html-components/pull/46
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: 'Dash UI HTML component suite'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  summary: Dash UI HTML component suite
 
 extra:
   recipe-maintainers:
