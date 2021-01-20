@@ -5,11 +5,11 @@ Home: https://plot.ly/dash
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dash-html-components-feedstock/blob/master/LICENSE.txt)
 
 Summary: Dash UI HTML component suite
 
-
+Development: https://github.com/plotly/dash-html-components
 
 Current build status
 ====================

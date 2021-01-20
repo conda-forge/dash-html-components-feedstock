@@ -1,7 +1,7 @@
 {% set name = "dash-html-components" %}
 {% set filename = "dash_html_components" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "2c662e640528c890aaa0fa23d48e51c4d13ce69a97841d856ddcaaf2c6a47be3" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "83eaa39667b7c3e6cbefa360743e6e536d913269ea15db14308ad022c78bc301" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pip
