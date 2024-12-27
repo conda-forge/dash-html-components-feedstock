@@ -9,24 +9,26 @@ package:
 
 source:
   fn: {{ filename }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ filename }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ filename }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - dash >=2.0.0  # not listed in the setup.py
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dash_html_components
 
